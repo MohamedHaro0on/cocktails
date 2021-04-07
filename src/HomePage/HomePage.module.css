@@ -1,0 +1,27 @@
+
+.HomePage{
+    padding : 10px ;
+}
+.CocktailsList{
+    padding : 0px ;
+    list-style:none ;
+    display: flex;
+    flex-wrap:wrap; 
+    justify-content: center;
+}
+.CocktailsList li{
+    width : 350px ;
+    margin : 10px ;
+    border-radius : 10px ;
+    border:solid 2px red ;
+}
+.CocktailsList li figure{
+    margin: 0px ;
+}
+.CocktailsList li figure img{
+    width : 100% ;
+    object-fit: contain;
+}
+.CocktailsList li figure figcaption {
+    padding : 10px 20px ;
+}

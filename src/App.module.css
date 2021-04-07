@@ -1,0 +1,9 @@
+.MainContent{
+    width:75% ;
+    margin:auto ;
+}
+@media only screen and (max-width:716px) {
+    .MainContent{
+        width:95% ;
+    }
+}

@@ -1,0 +1,60 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-bottom: solid 2px #476a2e;
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+.Header .MainHeading {
+  display: flex;
+}
+.Header .MainHeading button {
+  display: none;
+}
+
+.Header .Routes {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  list-style: none;
+}
+.Header .Routes li {
+  padding: 0px 20px;
+}
+.Header .Routes li a {
+  color: #222;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 677px) {
+  .Header,
+  .Header .Routes {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .Header .MainHeading {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  .Header .MainHeading button {
+    display: block;
+    all: unset;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .Header .Routes li {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .Opened {
+    height: 220px;
+  }
+  .Closed {
+    height: 70px;
+  }
+}
