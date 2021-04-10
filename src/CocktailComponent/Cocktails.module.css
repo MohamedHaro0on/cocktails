@@ -1,0 +1,50 @@
+.Container button{
+    display: block;
+    margin : 20px auto ;
+}
+.CocktailComponent{
+    display : flex; 
+    flex-wrap : wrap ;
+    width : 80% ;
+    margin:  auto ;
+    gap : 30px ;
+    margin-top : 20px ;
+}
+.CocktailComponent .ImageContainer{
+    flex : 1 ;
+}
+.CocktailComponent .ImageContainer img{
+    border-radius : 5px ;
+    object-fit: contain;
+}
+.CocktailComponent .CocktailsInfo{
+    flex : 2 ;
+}
+.CocktailComponent .ImageContainer img{
+    width : 100% ;
+}
+.CocktailComponent table tr td {
+    line-height: 30px;
+    font-weight: bold ;
+    padding : 10px 0px;
+    min-width:150px ;
+}
+
+.CocktailComponent table tr td:first-of-type span{
+    background-color: #d4e6a5;
+    color : #476a2e;
+    padding : 5px 10px  ;
+    border-radius : 2px ;
+}
+.CocktailComponent table tr td:nth-of-type(even){
+    padding : 5px 10px  ;
+}
+@media only screen and (max-width:1373px){
+    .CocktailComponent{
+        width:100%;
+        display: block;
+    }
+    .CocktailComponent table{
+        overflow-x : auto ;
+    }
+}

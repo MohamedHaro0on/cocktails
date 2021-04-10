@@ -1,9 +1,32 @@
-.MainContent{
-    width:75% ;
-    margin:auto ;
+.MainContent {
+  width: 75%;
+  margin: auto;
+  padding-top: 140px;
 }
-@media only screen and (max-width:716px) {
-    .MainContent{
-        width:95% ;
-    }
+
+.MainButton {
+  all: unset;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #476a2e;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: solid 2px #476a2e;
+  color: #fff;
+  transition: all 0.3s;
+}
+.MainButton:hover {
+  background-color: #fff;
+  color: #476a2e;
+}
+.MainButton a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 965px) {
+  .MainContent {
+    width: 100%;
+  }
 }

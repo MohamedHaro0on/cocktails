@@ -1,27 +1,62 @@
+.HomePageContainer form {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+.HomePageContainer form label {
+  display: block;
+  color: #476a2e;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  width : 100% ;
+}
+.HomePageContainer form input {
+  border: none;
+  width: 20rem;
+  padding: 10px;
+  background-color: #f1f5f8;
+  margin-top: 20px;
+}
 
-.HomePage{
-    padding : 10px ;
+.HomePageContainer .NoCocktailsHeading {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
 }
-.CocktailsList{
-    padding : 0px ;
-    list-style:none ;
-    display: flex;
-    flex-wrap:wrap; 
-    justify-content: center;
+.HomePageContainer .NoCocktailsHeading::after {
+  position: absolute;
+  content: " ";
+  background-color: #476a2e;
+  width: 60%;
+  height: 4px;
+  top: 120%;
+  left: 20%;
 }
-.CocktailsList li{
-    width : 350px ;
-    margin : 10px ;
-    border-radius : 10px ;
-    border:solid 2px red ;
+.CocktailsList {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.CocktailsList li figure{
-    margin: 0px ;
+.CocktailsList li {
+  min-width: 300px;
+  max-width: 400px;
+  margin: 10px;
+  border-radius: 10px;
+  border: solid 1px #ccc;
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
 }
-.CocktailsList li figure img{
-    width : 100% ;
-    object-fit: contain;
+.CocktailsList li figure {
+  margin: 0px;
+}
+.CocktailsList li figure img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
 }
 .CocktailsList li figure figcaption {
-    padding : 10px 20px ;
+  padding: 10px 20px;
 }

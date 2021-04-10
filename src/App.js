@@ -3,23 +3,21 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from './Header/Header';
 import HomePage from './HomePage/HomePage';
 import { AppProvider } from "./Context/Context";
-
+import CocktailComponent from "./CocktailComponent/CocktailComponent";
 const App = () => {
   return (
     <div className={ClassNames.App}>
       <AppProvider>
         <Router>
           <Header />
-          <Switch>
-            <div className={ClassNames.MainContent}>
-              <main>
-                <Route path="/" exact component={HomePage} />
-              </main>
-            </div>
-          </Switch>
+          <main className={ClassNames.MainContent}>
+            <Switch>
+              <Route path="/" exact={true} component={HomePage} />
+              <Route path="/cocktail/:id" exact component={CocktailComponent} />
+            </Switch>
+          </main>
         </Router>
       </AppProvider>
-
     </div>
   );
 }
