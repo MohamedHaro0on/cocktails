@@ -32,7 +32,7 @@ const Cocktail = (props) => {
             </Button>
             <article className={ClassNames.CocktailComponent}>
                 <div className={ClassNames.ImageContainer}>
-                    <img src={strDrinkThumb} alt={strDrink} />
+                    <img src={strDrinkThumb} alt={strDrink} height = "400"/>
                 </div>
                 <div className={ClassNames.CocktailsInfo}>
                     <table>

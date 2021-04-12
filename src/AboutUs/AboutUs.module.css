@@ -1,0 +1,13 @@
+.AboutUs{
+    padding : 10px ;
+    max-width : 60vh;
+    margin : 20px auto ;
+    text-align : center ;
+    letter-spacing: 1px;
+    line-height : 2rem ;
+    font-size : 1.5rem ;
+}
+.AboutUs h2{
+    margin-bottom : 2rem ;
+    padding : 10px ;
+}
